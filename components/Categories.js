@@ -1,0 +1,37 @@
+import { View, Text } from 'react-native'
+import React from 'react';
+
+const items = [
+  {
+    image: require('../assets/images/shopping-bag.png'),
+    text: "Pick-up"
+  },
+  {
+    image: require('../assets/images/soft-drink.png'),
+    text: "Soft drinks"
+  },
+  {
+    image: require('../assets/images/bread.png'),
+    text: "Bakery items"
+  },
+  {
+    image: require('../assets/images/fast-food.png'),
+    text: "Fast foods"
+  },
+  {
+    image: require('../assets/images/deals.png'),
+    text: "Deals"
+  },
+  {
+    image: require('../assets/images/coffee.png'),
+    text: "Coffee & tea"
+  }
+];
+
+export default function Categories() {
+  return (
+    <View>
+      <Text>Categories</Text>
+    </View>
+  )
+}
