@@ -1,5 +1,5 @@
 import { View, SafeAreaView, ScrollView } from 'react-native';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import HeaderTabs from '../components/HeaderTabs';
 import SearchBar from '../components/SearchBar';
@@ -8,7 +8,7 @@ import  RestaurantItems, { localRestaurants, } from '../components/RestaurantIte
 import { YELP_API_KEY, yelpUrl } from '../yelpApi/yelpApi';
 
 export default function Home() {
-  const [restaurantData, setRestaurantData] = React.useState(localRestaurants);
+  const [restaurantData, setRestaurantData] = useState(localRestaurants);
 
   const getRestaurantsFromYelp = () => {
 

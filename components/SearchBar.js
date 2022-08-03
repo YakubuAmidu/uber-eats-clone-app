@@ -5,6 +5,8 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
+import { googlApiKey } from '../googleApi/googleApiKey';
+
 export default function SearchBar() {
   return (
     <View 
@@ -13,6 +15,7 @@ export default function SearchBar() {
       flexDirection: 'row', 
       }}>
       <GooglePlacesAutocomplete 
+      query={{ key: googlApiKey }}
       placeholder='Search'
       styles={{ 
         textInput: {
@@ -57,3 +60,5 @@ export default function SearchBar() {
     </View>
   )
 }
+
+// AIzaSyCO_JUAarpk8WAqw__RDiU7bDVWRNie2rA
