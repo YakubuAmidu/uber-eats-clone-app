@@ -9,6 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+yelpApi/
 
 # macOS
 .DS_Store
