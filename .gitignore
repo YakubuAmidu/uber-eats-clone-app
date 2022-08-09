@@ -11,6 +11,7 @@ npm-debug.*
 web-build/
 screens/
 components/
+firebase.js
 
 # macOS
 .DS_Store
